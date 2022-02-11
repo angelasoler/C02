@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/11 23:53:37 by asoler            #+#    #+#             */
-/*   Updated: 2022/02/11 23:53:42 by asoler           ###   ########.fr       */
+/*   Created: 2022/02/11 23:59:08 by asoler            #+#    #+#             */
+/*   Updated: 2022/02/11 23:59:13 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-char	*ft_strupcase(char *str)
+char	*ft_strlowcase(char *str)
 {
 	int	i;
 
@@ -21,9 +21,9 @@ char	*ft_strupcase(char *str)
 	//verificar retorno, pois string original nao deve mudar
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 97 && str[i] <= 122)
+		if (str[i] >= 65 && str[i] <= 90)
 		{
-			str[i] -= 32;
+			str[i] += 32;
 		}
 		i++;
 	}
@@ -40,14 +40,15 @@ int	main()
 	char up_c[6] = "AJNBJ";
 
 
-	n = ft_strupcase(s);
+	n = ft_strlowcase(s);
 	printf("%s\n", n);
-	n = ft_strupcase(v);
+	n = ft_strlowcase(v);
 	printf("%s\n", n);
-	n = ft_strupcase(num);
+	n = ft_strlowcase(num);
 	printf("%s\n", n);
-	n = ft_strupcase(lower_c);
+	n = ft_strlowcase(lower_c);
 	printf("%s\n", n);
-	n = ft_strupcase(up_c);
+	n = ft_strlowcase(up_c);
 	printf("%s\n", n);
 }
+
