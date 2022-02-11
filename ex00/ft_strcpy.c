@@ -6,19 +6,19 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 19:45:28 by asoler            #+#    #+#             */
-/*   Updated: 2022/02/11 02:26:18 by asoler           ###   ########.fr       */
+/*   Updated: 2022/02/11 15:48:45 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
+int count(char *c);
 
 char	*ft_strcpy(char *dest, char *src)
 {
 	int i;
-
+	
 	i = 0;
-
 	while (src[i] != '\0')
 	{
 		dest[i] = src[i];
@@ -44,19 +44,16 @@ int count(char *c)
 int	main(void)
 {
 	char *source;
-	char *destiny;
-	char *result;
+	char destiny[100];
 	int size;
 
 	source = "Olá, quero transpassar essa string para o seu destino";
-	destiny = NULL;
+	ft_strcpy(destiny, source);
 
-	result = ft_strcpy(destiny, source);
+	size = count(destiny);
 
-	size = count(result);
-
-	if (result[size] == '\0')
+	if (destiny[size] == '\0')
 	{
-		printf("%s", result);
+		printf("%s", destiny);
 	}
 }
