@@ -6,7 +6,7 @@
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 20:22:50 by asoler            #+#    #+#             */
-/*   Updated: 2022/02/11 03:00:29 by asoler           ###   ########.fr       */
+/*   Updated: 2022/02/11 22:15:48 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,15 @@ int	main(void)
 
 	result = ft_strncpy(destiny, source, size);
 
-	write(1, result, 100);
+	// unsigned int i;
+	// i = 0;
+	// while (i < size )
+	// {
+	// 	if (result[i] == '\0')
+	// 		result[i] == '*';
+	// 	i++;
+	// }
+		write(1, result, 100);
 
 
 	// printf("%s", result);
