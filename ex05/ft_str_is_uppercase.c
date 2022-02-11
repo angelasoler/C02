@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoler <asoler@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/11 22:48:39 by asoler            #+#    #+#             */
-/*   Updated: 2022/02/11 22:51:24 by asoler           ###   ########.fr       */
+/*   Created: 2022/02/11 22:54:54 by asoler            #+#    #+#             */
+/*   Updated: 2022/02/11 22:55:22 by asoler           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int	ft_str_is_lowercase(char *str)
+int	ft_str_is_uppercase(char *str)
 {
 	int	i;
 
@@ -21,7 +21,7 @@ int	ft_str_is_lowercase(char *str)
 	//tratar string vazia
 	while (str[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
 			i++;
 		}
@@ -43,14 +43,14 @@ int	main()
 	char lower_c[6] = "asdjb"; //coloca sempre mais um do nulo(aqui esta certo)
 	char up_c[6] = "AJNBJ";
 
-	n = ft_str_is_lowercase(s);
+	n = ft_str_is_uppercase(s);
 	printf("%d\n", n);
-	n = ft_str_is_lowercase(v);
+	n = ft_str_is_uppercase(v);
 	printf("%d\n", n);
-	n = ft_str_is_lowercase(num);
+	n = ft_str_is_uppercase(num);
 	printf("%d\n", n);
-	n = ft_str_is_lowercase(lower_c);
+	n = ft_str_is_uppercase(lower_c);
 	printf("%d\n", n);
-	n = ft_str_is_lowercase(up_c);
+	n = ft_str_is_uppercase(up_c);
 	printf("%d\n", n);
 }
