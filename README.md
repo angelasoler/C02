@@ -1,5 +1,8 @@
 <h1 align="center">
-  #C02 42sp basecamp challenge
+  C02
+
+<a href="https://github.com/JaeSeoKim/badge42"><img src="https://badge42.vercel.app/api/v2/cl263316l006809l0mxrfwgrw/project/2488381" alt="asoler's 42 Basecamp C 02 Score" /></a>
+  
 </h1>
 <p align="center">
   <img alt="repository size" src="https://img.shields.io/github/repo-size/angelasoler/C02">
